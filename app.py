@@ -37,7 +37,7 @@ if user_input:
         cevap = "YouTube aciliyor efendim..."
     else:
         response = client.chat.completions.create(
-           model="llama2-70b-4096"
+          model="llama2-70b-4096",
             messages=[{"role": "user", "content": user_input}],
             max_tokens=300
         )
